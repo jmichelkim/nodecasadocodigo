@@ -1,0 +1,15 @@
+{
+  "name": "servidorwebcomrotasexpressepaginasdinamicasejs",
+  "version": "1.0.0",
+  "description": "Servidor Node Web com Rotas utilizando o Express e Paginas Dinamicas em EJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Michel Kim",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}

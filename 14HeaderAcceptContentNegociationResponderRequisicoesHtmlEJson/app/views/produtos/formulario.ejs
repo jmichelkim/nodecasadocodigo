@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario CasaDoCodigo</title>
+</head>
+<body>
+    <h3>Formulário da Casa do Código</h3>
+    <form action="/produtos" method="POST">
+        <div>
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite um título">
+        </div>
+        <div>
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" name="preco" placeholder="25.99">
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <textarea cols="20" rows="10" id="descricao" name="descricao" placeholder="Descreva o livro"></textarea>
+        </div>
+        <input type="submit" value="gravar"/>
+    </form>
+</body>
+</html>

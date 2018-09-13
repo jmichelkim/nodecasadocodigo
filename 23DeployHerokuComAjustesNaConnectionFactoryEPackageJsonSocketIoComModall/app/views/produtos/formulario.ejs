@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Cadastrar Livros</title>
+</head>
+
+<body style="padding-left:20px; padding-right:20px;">
+    <h3 class="alert alert-success">Cadastrar Livros na Loja</h3>
+    <div class='erros'>
+        <% if(errosValidacao) {%>
+            <ul>
+                <% for(var i = 0; i < errosValidacao.length; i++) {%>
+                    <li style="color: red;"><%=errosValidacao[i].param %> - <%=errosValidacao[i].msg %></li>
+                <%}%>
+            </ul>
+        <%}%>
+    </div>
+
+
+    </div>
+    <form action="/produtos" method="POST">
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" class="form-control" id="titulo" name="titulo" value="<%=produto.titulo%>" placeholder="Digite um título">
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço</label>
+            <input type="text" class="form-control" id="preco" name="preco" value="<%=produto.preco%>" placeholder="25.99">
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea class="form-control" cols="20" rows="5" id="descricao" name="descricao" placeholder="Descreva o livro"><%=produto.descricao%></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="gravar"/>
+    </form>
+
+</body>
+</html>

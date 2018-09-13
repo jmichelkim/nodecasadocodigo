@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+            <title>Lista dos Produtos</title>
+        </head>
+        
+    <body style="padding-left:20px; padding-right:20px;">
+        <h3 class="alert alert-success">Página dos Produtos Cadastrados - Lista.ejs</h3>
+
+        <table class="table table">
+            <thead>
+                <th>id</th>
+                <th>titulo</th>
+                <th>descricao</th>
+                <th>preco</th>
+            </thead>
+            <%for(var i = 0; i < lista.length; i++){%>
+                <tr>
+                    <td><%=lista[i].id%></td>
+                    <td><%=lista[i].titulo%></td>
+                    <td><%=lista[i].descricao%></td>
+                    <td><%=lista[i].preco%></td>                
+                </tr>
+            <%}%>
+            <tr>
+
+            </tr>
+        </table>
+    </body>
+</html>
